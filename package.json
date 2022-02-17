@@ -1,0 +1,55 @@
+{
+  "name": "vrtyping",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Zach Capalbo"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^2.0.0",
+    "color": "^3.1.2",
+    "colorsys": "^1.0.22",
+    "css-loader": "^6.6.0",
+    "csv-loader": "^3.0.3",
+    "express": "^4.17.1",
+    "file-loader": "^1.1.11",
+    "glsl-shader-loader": "^0.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "ls": "^0.2.1",
+    "markdown-loader": "^8.0.0",
+    "node-fetch": "^2.6.0",
+    "npm-license-crawler": "^0.2.1",
+    "pug": "^3.0.2",
+    "pug-loader": "^1.0.2",
+    "raw-loader": "^4.0.0",
+    "shortid": "^2.2.8",
+    "slm": "^2.0.0",
+    "slm-loader": "^0.1.0",
+    "stringify-loader": "^1.0.0",
+    "style-loader": "^3.3.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^3.10.1",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "aframe-vartiste-toolkit": "^1.2.0",
+    "convolve": "^0.1.0",
+    "human-readable-ids": "^1.0.4",
+    "socket.io": "^2.3.0",
+    "three-ik": "^0.1.0"
+  }
+}

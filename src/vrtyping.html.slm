@@ -1,0 +1,21 @@
+a-scene renderer="colorManagement: true; physicallyCorrectLights: true; sortObjects: true" shadow="enabled: true" keyboard-shortcuts="enterVR: false"
+  a-assets
+    a-asset vartiste-assets=""
+
+  /a-sky hdri-environment="src: #asset-hdri; toneMapping: 5; exposure: 0.6" rotation="0 45 0"
+  /a-entity light="castShadow:  true;  shadowCameraVisible:  false;  shadowCameraBottom:  -28.38;  shadowCameraTop:  50;  shadowCameraFov:  50;  shadowMapWidth:  1024;  shadowMapHeight:  1024;  shadowCameraFar:  56.22;  shadowCameraRight:  39.67;  shadowCameraLeft:  -33.91;  shadowRadius:  1.16" position="1 10 -10" fix-light-shadow=""
+
+  a-sky rotation="0 180 0"
+
+  a-entity vartiste-user-root=""
+
+  a-entity#world-root position="0 -1.6 0"
+    a-entity#enviropack shadow="receive: true"
+    a-entity#text-platform-root position="0 0 -5"
+      a-entity#typewriter gltf-model="#asset-typewriter" scale="5 5 5" animation="property: position; to: 0 -0.005 0; from: 0 0 0; dur: 100; easing: linear; loop: false; startEvents: typedown; pauseEvents: typeup" animation__reset="property: position; from: 0 -0.005 0; to: 0 0 0; dur: 200; easing: linear; loop: false; startEvents: typeup"
+      a-entity#save-disk gltf-model="#asset-floppy-disk" scale="5 5 5" rotation="0 0 90" animation="property: position; to: 2 0 0; from: 0 0 0; dur: 800; easing: linear; loop: false; startEvents: save; easing: easeOutQuart" animation__opacity="property: text-opacity; to: 0; from: 1; dur: 800; easing: easeInQuart; loop: false; startEvents: save;" text-opacity="1"
+      a-entity#text-display troika-text="value: Type away!; outlineWidth: 0.01; outlineColor: #333; fontSize: 1; font: https://fonts.gstatic.com/s/sansitaswashed/v1/BXR8vFfZifTZgFlDDLgNkBydPKTt3pVCeYWqJnZSW4ZpXT0ffQ.woff" position="0 2.6 0"
+        a-entity#last-word text-opacity="1" troika-text="value:; fontSize: 1; font: https://fonts.gstatic.com/s/sansitaswashed/v1/BXR8vFfZifTZgFlDDLgNkBydPKTt3pVCeYWqJnZSW4ZpXT0ffQ.woff" position="0 0 0" animation="property: position; to: -1 0 -0.01; from: 0 0 0; loop: false; dur: 200; startEvents: kaching" animation__opacity="property: text-opacity; to: 0; from: 1; loop: false; dur: 200; startEvents: kaching"
+    /a-entity#about-text position="-3 1 -5"
+      /a-entity troika-text="value: VR Tranquil Typing; outlineWidth: 0.01; color: #fffbb8; outlineColor: #333; fontSize: 0.3; font: https://fonts.gstatic.com/s/sansitaswashed/v1/BXR8vFfZifTZgFlDDLgNkBydPKTt3pVCeYWqJnZSW4ZpXT0ffQ.woff"
+      /a-entity position="0 -0.66 0" troika-text="value: By Zach Capalbo\nTypewriter (CC-BY): Francesco Coldesina\nFloppy Disk (CC-BY): Nyangire; outlineWidth: 0.01; color: #fffbb8; outlineColor: #333; fontSize: 0.2;"

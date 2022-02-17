@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title VR Tranquil Typing
+    - let title = "VR Tranquil Typing"
+    - let desc = `Type in a calm environment as the words you type disappear until you call on them later`;
+    meta name="description" content=desc
+    meta name="title" content=desc
+
+    meta property="og:type" content="website"
+    meta property="og:url" content="https://zach-geek.gitlab.io/vrtyping"
+    meta property="og:title" content= title
+    meta property="og:description" content=desc
+    meta property="og:image" content="https://zach-geek.gitlab.io/vrtyping/preview.jpg"
+
+    meta property="twitter:card" content="summary_large_image"
+    meta property="twitter:url" content="https://zach-geek.gitlab.io/vrtyping"
+    meta property="twitter:title" content=title
+    meta property="twitter:description" content=desc
+    meta property="twitter:image" content="https://zach-geek.gitlab.io/vrtyping/preview.jpg"
+
+    script src="https://aframe.io/releases/1.2.0/aframe.js"
+    script src="https://unpkg.com/aframe-vartiste-toolkit@1.30.1/vartiste-toolkit.js"
+    script src="https://cdn.jsdelivr.net/npm/aframe-enviropacks@latest/aframe-enviropacks.js"
+    script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"
+    link rel="preconnect" href="https://fonts.gstatic.com"
+    link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"
+  body
+    .about
+      h1 VR Tranquil Typing
+      p Enter or Ctrl+S to save
+      a href="https://twitter.com/zach_geek" By Zach Capalbo
+      a href="https://sketchfab.com/3d-models/typewriter-f8339a2f7ea849b8afbebb76a40e1759" Typewriter by (CC-BY): Francesco Coldesina. Modified by Zach Capalbo
+      a href="https://sketchfab.com/3d-models/floppy-disk-42e1e3a4e80443b8ac72fd55d988153e" Floppy disk by (CC-BY): Nyangire. Modified by Zach Capalbo
+      a href="https://hdrihaven.com/hdri/?h=autumn_hockey" Environment by (CC0): Greg Zaal
+      a href="https://aframe.io" Built with A-Frame
+      a href="https://gitlab.com/zach-geek/vrtyping" This is an open source project
+    .presets
+      a href="index.html?preset=autumn" title="Use Autumn Environment"
+        img src="./autumn.jpg"
+      a href="index.html?preset=sandstone" title="Use Sandstone Environment"
+        img src="./sandstone.jpg"
+      a href="index.html?preset=night" title="Use Night Environment"
+        img src="./night.jpg"
